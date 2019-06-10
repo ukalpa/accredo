@@ -1,0 +1,40 @@
+{
+  "name": "accredo",
+  "version": "1.0.3",
+  "description": "Accredo Web Service API",
+  "main": "./dist/accredo.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Bizex",
+    "Accredo5",
+    "Web",
+    "API"
+  ],
+  "homepage": "https://www.bizex.co.nz",
+  "author": "ukalpa@gmail.com",
+  "bugs": {
+    "email": "ukalpa@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ukalpa/accredo"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "dottie": "^2.0.1",
+    "inflection": "^1.12.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.25",
+    "node-fetch": "^2.6.0",
+    "toposort-class": "^1.0.1",
+    "validator": "^11.0.0",
+    "wkx": "^0.4.6"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}
