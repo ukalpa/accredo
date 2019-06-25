@@ -54,9 +54,36 @@ accredo.CurrentUser.then(function (res) {
 });
 
 // Query raw SQL
-accredo.sql("SELECT FIRST 1 * FROM ARCUST").then(function (res) {
+
+accredo.sql("SELECT FIRST 2 CustomerCode, CustomerName FROM ARCUST").then(function (res) {
     console.log(res);
-});;
+    // Print: [ { CustomerCode: '0001', CustomerName: 'Cash Sales' }, { CustomerCode: '0003', CustomerName: 'ASB Bank Ltd' } ]
+}); 
+
+accredo.sql("SELECT FIRST 1 CustomerCode, CustomerName FROM ARCUST").then(function (res) {
+    console.log(res);
+    // Print: [{ CustomerCode: '0001', CustomerName: 'Cash Sales' }]
+});
+
+// Please use sqlRow if you only want the single row
+accredo.sqlRow("SELECT FIRST 1 CustomerCode, CustomerName FROM ARCUST").then(function (res) {
+    console.log(res);
+    // Print: { CustomerCode: '0001', CustomerName: 'Cash Sales' }
+});
+
+accredo.sql("SELECT COUNT(*) FROM ARCUST").then(function (res) {
+    console.log(res);
+    // Print: [{ Count: 180 }]
+});
+
+// Please use sqlOne if you only want to get one field from the first row
+accredo.sqlOne("SELECT COUNT(*) FROM ARCUST").then(function (res) {
+    console.log(res);
+    // Print:  180 
+});
+
+
+
 ```
 
 **Control Entity**
