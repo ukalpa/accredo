@@ -81,15 +81,32 @@ accredo.sqlOne("SELECT COUNT(*) FROM ARCUST").then(function (res) {
     console.log(res);
     // Print:  180 
 });
-
-
-
 ```
+
+
+**OAuth2 Login Support**
+```javascript
+
+const accredoAPIUrl = 'http://localhost:6567/saturn/odata4/v1/company(\'demo\')/';
+const accredoOptions = {
+    token_url: 'http://localhost:6567/saturn/oauth2/v1/token',
+    client_id : 'hbx1xYj886jy7vZ_',
+    username: 'DEMO',
+    password: 'DEMO',
+    cache_dir: '/tmp',  // The temporary directory for storing token
+}
+
+// Initiate Accredo
+const accredo = new Accredo(accredoAPIUrl, accredoOptions);
+```
+
 
 **Control Entity**
 ```javascript
-const customer = new ARCustomer();
-customer.CustomerCode = 'TEST';
-customer.CustomerName = 'Test Name';
-await customer.save();
+async () => {
+    const customer = new ARCustomer();
+    customer.CustomerCode = 'TEST';
+    customer.CustomerName = 'Test Name';
+    await customer.save();
+}
 ```

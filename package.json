@@ -1,6 +1,6 @@
 {
   "name": "accredo",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Accredo Web Service API",
   "main": "./dist/accredo.js",
   "engines": {
@@ -34,7 +34,7 @@
     "node-fetch": "^2.6.0",
     "toposort-class": "^1.0.1",
     "validator": "^11.0.0",
-    "wkx": "^0.4.6"
+    "wkx": "^0.4.7"
   },
   "license": "SEE LICENSE IN LICENSE"
 }
