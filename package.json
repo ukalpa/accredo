@@ -1,8 +1,8 @@
 {
   "name": "accredo",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Accredo Web Service API",
-  "main": "./dist/accredo.js",
+  "main": "logs/accredo.js",
   "engines": {
     "node": ">=8.0.0"
   },
@@ -10,8 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Bizex",
+    "Accredo",
     "Accredo5",
+    "Bizex",
     "Web",
     "API"
   ],
