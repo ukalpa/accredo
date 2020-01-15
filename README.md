@@ -28,30 +28,36 @@ const accredo = new Accredo("http://localhost:6567/saturn/odata4/v1/company('dem
 
 **Basic Information**
 ```javascript
+// Get About Info
+accredo.About().then(function (res) {
+    console.log(res);
+});
+
 // Get Company Info
-accredo.Company.then(function (res) {
+accredo.Company().then(function (res) {
     console.log(res);
 });
 
 // Get Version Info
-accredo.Version.then(function (res) {
+accredo.Version().then(function (res) {
     console.log(res);
 });
 
 // Get System Period
-accredo.SystemPeriod.then(function (res) {
+accredo.SystemPeriod().then(function (res) {
     console.log(res);
 });
 
 // Get System Date
-accredo.SystemDate.then(function (res) {
+accredo.SystemDate().then(function (res) {
     console.log(res);
 });
 
 // Get Current User
-accredo.CurrentUser.then(function (res) {
+accredo.CurrentUser().then(function (res) {
     console.log(res);
 });
+
 
 // Query raw SQL
 
