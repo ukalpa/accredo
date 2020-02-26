@@ -1,6 +1,6 @@
 {
   "name": "accredo",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Accredo Web Service API",
   "main": "dist/accredo.js",
   "engines": {
