@@ -16,3 +16,4 @@ node_modules
 config.gypi
 *.orig
 package-lock.json
+/test
