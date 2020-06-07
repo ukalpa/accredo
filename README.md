@@ -909,4 +909,4 @@ accredo.ARCustomer.find("DEMO_CUSTOMER").then(function(customer){
 });
 ```
 
-For more information and commercial support, welcome to contact admin@bizex.co.nz_
+For more information and commercial support, welcome to contact [admin@bizex.co.nz](admin@bizex.co.nz)
